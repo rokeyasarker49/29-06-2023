@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+                .header {
+                        background-color: antiquewhite;
+                        padding: 35px;
+                        text-align: center;
+                        font-size: 30px;
+                }
+
+                .text {
+                        padding: 10px;
+                        margin-top: 30px;
+                        height: 1000px;
+                        font-size: 25px;
+                }
+
+                #navbar {
+                        background-color: rgb(223, 187, 144);
+                        overflow: hidden;
+                
+                        
+                }
+
+                #navbar a{
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: #f2f2f2;
+                        padding: 10px;
+
+                }
+
+                #navbar a:hover {
+                        background-color: #9e8434;
+
+                }
+
+                .sticky {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                }
+
+
+        </style>
+</head>
+<body>
+        <div class="header">
+                <h2>Scroll Down</h2>
+                <p>Scroll down to see the sticky effect.</p>
+        </div>
+        <div id="navbar">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact</a>
+        </div>
+
+        <div class="text">
+                <h3>Sticky Navigation Example</h3>
+                <p>The navbar will stick to the top when you reach its scroll position.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quam numquam ratione praesentium impedit, sed facilis recusandae nostrum nobis aspernatur nulla assumenda suscipit dicta! Eum odio placeat soluta, consectetur asperiores at voluptatibus quod deserunt quis eaque sequi sint earum corrupti qui unde, pariatur impedit repellat alias architecto sit officia. Impedit voluptate minima similique odio quas, alias necessitatibus dolore recusandae voluptatem eligendi, porro quam. At similique obcaecati dolore, doloremque hic possimus temporibus, iure accusantium reprehenderit libero sunt adipisci veritatis, odit facere eius? Numquam, dolorum ipsa dolores repellendus, impedit veritatis tempore cupiditate optio hic quos cum quibusdam eaque minus quia. Blanditiis nihil, explicabo quaerat, sed architecto quam quis rerum similique aliquam adipisci recusandae in repudiandae quae. Aperiam quidem error consequuntur, sapiente quae, mollitia debitis ullam perspiciatis nam enim impedit aliquid eos non similique doloremque saepe perferendis ducimus molestias consectetur rerum quibusdam nulla et officiis. Eum ex molestias magnam culpa incidunt aliquam nam, debitis animi dolorum dolor inventore nisi minima quae veniam iure quis et! Ratione amet repellat quae nihil? Quam laudantium itaque, eligendi et praesentium similique quidem in ad. Minus laboriosam aliquid enim cumque accusamus temporibus molestiae vel nostrum ea eos labore aliquam et ipsa quas consequuntur voluptates, repellendus illum dolorum beatae! Magnam, amet necessitatibus repellendus laborum tempora vel. Qui cum quas dicta possimus, expedita laudantium totam debitis sit veniam dolorem magni officia enim blanditiis et quasi. Impedit beatae velit vitae dolorem iure veritatis eius sint veniam iusto non eaque saepe cupiditate est vel placeat amet corrupti, quas, illum quasi accusantium consectetur. Libero corrupti sequi placeat laborum magnam aut sunt expedita voluptates dolore totam perferendis quasi sapiente accusamus enim fugit qui odit, pariatur iure delectus numquam quis beatae. Consectetur minima, debitis totam voluptate quas ullam architecto illum iusto officiis accusantium nobis non quos rem minus dolore. Placeat sed quos facilis quam, corrupti adipisci. Quam molestias, beatae veniam aperiam repellendus expedita nostrum illum aspernatur eveniet perferendis architecto fugit hic laboriosam harum adipisci error incidunt perspiciatis quidem, vitae maxime reprehenderit. Esse dolor, similique reiciendis cum quo enim. Quam enim excepturi facere est porro cumque alias nesciunt quaerat! Libero eaque optio animi consectetur magni possimus beatae dolorem maiores. Iste voluptate ad iusto eos perferendis facere possimus voluptas! Eos tempore quasi hic. Similique minus ipsum atque laboriosam dignissimos sapiente cum omnis eligendi quisquam saepe nobis, nulla ducimus ut assumenda ab fugit quibusdam at dicta sed hic? Cum reprehenderit facere ullam? Ratione, asperiores temporibus. Sapiente, quo odio!</p>
+        </div>
+
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+        </script>
+                
+</body>
+</html>

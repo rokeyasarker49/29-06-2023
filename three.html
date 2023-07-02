@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                .text {
+                        padding: 10px;
+                        margin-top: 30px;
+                        height: 1000px;
+                        font-size: 25px;
+                }
+
+                #navbar {
+                        background-color: rgb(223, 187, 144);
+                        top: -50px;
+                        width: 100%;
+                        display: block;
+                        position: fixed;
+                        transition: top 0.5s;
+                        
+                }
+
+                #navbar a{
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: #f2f2f2;
+                        padding: 10px;
+ 
+                }
+
+                #navbar a:hover {
+                        background-color: #9e8434;
+
+                }
+        </style>
+</head>
+<body>
+        <div id="navbar">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact</a>
+        </div>
+
+        <div class="text">
+                <h1>This example demonstrates how to slide down a navbar when the user starts to scroll the page.</h1>
+                <p>Scroll down this frame to see the effect!</p>
+                <p>Scroll to the top to hide the navbar.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laboriosam soluta optio expedita dolore nostrum a? Saepe natus corporis iure, harum eaque, voluptatibus temporibus magnam voluptate, magni sapiente exercitationem ad porro ipsum vel numquam rem nemo accusantium quas sequi alias aspernatur dolor itaque? Nobis aliquam minus vero ipsum sed maxime id voluptate sint totam expedita repellat dolor, vel, odit similique quis officia doloremque deleniti voluptates quae mollitia non perspiciatis libero. Doloribus a minima possimus atque voluptates molestiae blanditiis quisquam, adipisci nisi, quibusdam neque, beatae numquam eaque enim reiciendis? Quisquam perferendis ea cum pariatur. Incidunt porro doloremque blanditiis, vero provident dignissimos veniam perspiciatis fugiat quas reiciendis nisi ratione harum vitae labore aperiam voluptatum sint unde quisquam odio itaque accusamus repudiandae consequatur. Repellendus sunt delectus excepturi, magnam quod quasi voluptatibus. Quos, libero veritatis iusto est consectetur beatae alias illo assumenda! Dolore dolorem in omnis molestias alias commodi id repellendus? Laborum est aspernatur nisi debitis? Id quasi laborum quidem nemo vero, consequatur omnis. Accusamus numquam tempore dignissimos ipsam repudiandae dolores similique perferendis, porro optio atque nostrum, voluptatibus quisquam facere saepe eaque repellat iste quas! Magnam tenetur repudiandae, ducimus ex voluptates ullam quos, nihil, minus dolorem id voluptatem? Assumenda cumque possimus non, consequuntur nam repellat. Ex, distinctio a voluptas quidem quae laudantium sit repellat maiores quaerat possimus sed quibusdam ducimus perspiciatis iste nam architecto. Ab recusandae perferendis error atque dolorem molestiae corporis nulla sequi, eligendi dolore suscipit sapiente obcaecati optio, rem soluta unde voluptates saepe amet? Aperiam perspiciatis similique illo adipisci iste dolorem qui delectus ducimus voluptatibus commodi accusantium quidem beatae perferendis at tempora cum, maiores dolor non. Distinctio repudiandae dolores odit doloremque corporis, aliquam veritatis maxime? Architecto explicabo reprehenderit, veniam tempora nulla fugiat quae ad facere similique nobis. Ullam voluptas nisi eos veritatis saepe, perferendis doloribus ipsa, est, officia recusandae provident magnam repellendus.</p>
+        </div>
+
+
+        <script>
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("navbar").style.top = "0";
+                  } else {
+                    document.getElementById("navbar").style.top = "-50px";
+                  }
+                }
+        </script>
+                
+</body>
+</html>

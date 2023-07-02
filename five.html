@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                .text {
+                        padding: 10px;
+                        margin-top: 30px;
+                        height: 1000px;
+                        font-size: 25px;
+                }
+
+                #navbar {
+                        background-color: rgb(223, 187, 144);
+                        top: 0;
+                        z-index: 99;
+                        overflow: hidden;
+                        padding: 90px 15px;
+                        width: 1323px;
+                        display: block;
+                        position: fixed;
+                        transition: 0.5s;
+                       
+                        
+                }
+
+                #navbar #logo {
+                        font-size: 35px;
+                        font-weight: bold;
+                        transition: 0.5s;
+                }
+
+
+
+                #navbar a{
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: #f2f2f2;
+                        padding: 10px;
+                        border-radius: 4px;
+                        line-height: 25px;
+ 
+                }
+
+                #navbar-right {
+                        float: right;
+                }
+
+                #navbar a:hover {
+                        background-color: #9e8434;
+
+                }
+        </style>
+</head>
+<body>
+        <div id="navbar">
+                <a href="#default" id="logo">CompanyLogo</a>
+                <div id="navbar-right">
+                        <a href="#">Home</a>
+                        <a href="#">News</a>
+                        <a href="#">About</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">Contact</a>
+                </div>
+        </div>
+
+        <div class="text">
+                <h1>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</h1>
+                <p>Scroll down this frame to see the effect!</p>
+                <p>Scroll to the top to remove the effect.</p>
+                <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, delectus soluta ipsam ipsum, eaque dignissimos veniam totam consectetur dolores dolorum nam eveniet ad fuga, optio repellendus beatae animi eos assumenda consequatur ipsa recusandae quia voluptatum? Ipsum atque quis minus explicabo voluptatibus non sit, nobis eos, laudantium maxime fugiat repudiandae iste nemo necessitatibus veniam distinctio doloribus unde repellat amet ab illo sed excepturi quia impedit! Numquam totam aperiam quasi minima adipisci consequatur expedita illo maxime qui non, dolorem, cumque vel molestias facere sint architecto officia labore placeat mollitia obcaecati quae. Inventore repellendus nobis, dignissimos deserunt assumenda vitae corporis! Odit soluta magnam id quo obcaecati, perspiciatis dolores enim, laborum accusamus libero mollitia fugit vero quam temporibus dicta quis eum nisi! Error quae quasi officia facere pariatur ullam aspernatur, voluptatibus corporis laudantium quos numquam ut nobis consequuntur consequatur quo unde, sit deleniti nostrum totam recusandae similique esse? Voluptatem tenetur quasi recusandae, exercitationem accusamus nulla quae, a blanditiis similique ducimus laboriosam molestiae ratione tempora quam officiis molestias doloremque et pariatur, repellat atque sint deleniti impedit. Id labore, libero totam ratione explicabo neque dignissimos excepturi. Autem accusantium sit repudiandae beatae illo, nisi impedit quia id ducimus natus? Iste laudantium ipsa exercitationem, optio blanditiis velit quos nulla numquam vero similique mollitia, hic nihil odit a itaque commodi atque delectus facilis dignissimos cumque quasi voluptatem! Molestiae architecto eos deserunt fugiat ab nostrum iusto quaerat natus? Quaerat atque delectus laudantium totam modi dolores sed id, earum aperiam facere accusamus omnis asperiores quis! Eos quod cumque, omnis deserunt labore magnam ratione! Illo ducimus non minus cum blanditiis veniam, distinctio natus similique dignissimos numquam pariatur incidunt totam, beatae, iure voluptatum doloribus iste. Accusamus, facilis placeat porro harum eos obcaecati iure veniam nam, beatae ea doloremque quidem vitae maxime nobis nostrum molestias ipsa, expedita non impedit quaerat. Repudiandae consequatur doloremque perspiciatis!</p>
+                
+        </div>
+
+        <script>
+                window.onscroll = function() {scrollFunction()};
+        
+                function scrollFunction() {
+                  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("navbar").style.padding = "30px 10px";
+                    document.getElementById("logo").style.fontSize = "25px";
+                  } else {
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                    document.getElementById("logo").style.fontSize = "35px";
+                  }
+                }
+                </script>
+</body>
+</html>
